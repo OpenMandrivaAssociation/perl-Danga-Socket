@@ -1,7 +1,7 @@
 %define module  Danga-Socket
 %define name    perl-%{module}
 %define version 1.59
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name:           %{name}
 Version:        %{version}

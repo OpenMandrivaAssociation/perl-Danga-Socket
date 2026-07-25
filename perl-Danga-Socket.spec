@@ -1,15 +1,15 @@
 %define upstream_name    Danga-Socket
-%define upstream_version 1.61
+%define upstream_version 1.62
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Event loop and event-driven async socket base class
 License:	GPL+ and Artistic
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Danga/%{upstream_name}-%{upstream_version}.tar.bz2
+URL:		https://metacpan.org/dist/Danga-Socket
+Source0:	https://cpan.metacpan.org/authors/id/N/NM/NML/Danga-Socket-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel

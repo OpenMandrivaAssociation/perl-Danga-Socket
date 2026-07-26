@@ -1,15 +1,13 @@
 %define upstream_name    Danga-Socket
-%define upstream_version 1.62
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.62
+Release:	2
 
 Summary:	Event loop and event-driven async socket base class
 License:	GPL+ and Artistic
 Group:		Development/Perl
 URL:		https://metacpan.org/dist/Danga-Socket
-Source0:	https://cpan.metacpan.org/authors/id/N/NM/NML/Danga-Socket-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/N/NM/NML/Danga-Socket-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -27,7 +25,7 @@ readability, writability, errors, and other conditions.
 Because Danga::Socket uses the "fields" module, your subclasses must too.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -52,9 +50,7 @@ make test
 
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 1.610.0-1mdv2011.0
 + Revision: 405959
-- rebuild using %%perl_convert_version
-
-* Tue Dec 02 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.61-1mdv2009.1
+- rebuild using %1.62 Tue Dec 02 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.61-1mdv2009.1
 + Revision: 309296
 - update to new version 1.61
 
